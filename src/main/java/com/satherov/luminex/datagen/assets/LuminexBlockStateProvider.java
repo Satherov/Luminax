@@ -25,7 +25,7 @@ public class LuminexBlockStateProvider extends BlockStateProvider {
             stairsBlock(set.STAIRS.get(), block(set.BLOCK));
             wall(set.WALL, block(set.BLOCK));
             pressurePlateBlock(set.PRESSURE_PLATE.get(), block(set.BLOCK));
-            button(set.BUTTON, block(set.BLOCK));
+            buttonBlock(set.BUTTON, block(set.BLOCK));
         });
     }
 
@@ -38,8 +38,8 @@ public class LuminexBlockStateProvider extends BlockStateProvider {
         models().wallInventory(block.getId().getPath(), texture);
     }
 
-    public void button(DeferredHolder<Block, ButtonBlock> block, ResourceLocation texture) {
+    public void buttonBlock(DeferredHolder<Block, ButtonBlock> block, ResourceLocation texture) {
         super.buttonBlock(block.get(), texture);
-        models().buttonInventory(block.getId().getPath(), texture);
+        models().buttonInventory(block.getId().getPath() + "_inventory", texture);
     }
 }
