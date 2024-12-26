@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "luminex:block/cyan_luminex_block"
+    }
+  }
+}

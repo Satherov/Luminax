@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "luminex:block/cyan_luminex_block"
+  }
+}

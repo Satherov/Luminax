@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "luminex:block/green_luminex_block"
+    }
+  }
+}

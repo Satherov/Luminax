@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminex:block/brown_luminex_slab"
+    },
+    "type=double": {
+      "model": "luminex:block/brown_luminex_block"
+    },
+    "type=top": {
+      "model": "luminex:block/brown_luminex_slab_top"
+    }
+  }
+}

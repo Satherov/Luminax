@@ -1,0 +1,20 @@
+{
+  "values": [
+    "luminex:white_luminex_block",
+    "luminex:light_gray_luminex_block",
+    "luminex:gray_luminex_block",
+    "luminex:black_luminex_block",
+    "luminex:brown_luminex_block",
+    "luminex:red_luminex_block",
+    "luminex:orange_luminex_block",
+    "luminex:yellow_luminex_block",
+    "luminex:lime_luminex_block",
+    "luminex:green_luminex_block",
+    "luminex:cyan_luminex_block",
+    "luminex:light_blue_luminex_block",
+    "luminex:blue_luminex_block",
+    "luminex:purple_luminex_block",
+    "luminex:magenta_luminex_block",
+    "luminex:pink_luminex_block"
+  ]
+}
