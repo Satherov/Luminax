@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_luminax:blocks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#luminax:blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:tint_brown_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_luminax:blocks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:tint_brown_block"
+    ]
+  }
+}

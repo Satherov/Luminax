@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "luminex:block/cyan_luminex_block"
-  }
-}

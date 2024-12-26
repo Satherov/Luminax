@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "luminax:block/cyan_block",
+    "side": "luminax:block/cyan_block",
+    "top": "luminax:block/cyan_block"
+  }
+}

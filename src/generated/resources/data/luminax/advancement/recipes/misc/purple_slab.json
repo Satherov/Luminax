@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_purple_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "luminax:purple_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "luminax:purple_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_purple_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "luminax:purple_slab"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/green_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/green_block"
+    },
+    "type=top": {
+      "model": "luminax:block/green_slab_top"
+    }
+  }
+}

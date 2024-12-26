@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "luminax:block/orange_block",
+    "side": "luminax:block/orange_block",
+    "top": "luminax:block/orange_block"
+  }
+}

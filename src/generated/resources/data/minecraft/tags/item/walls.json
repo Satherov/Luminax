@@ -1,20 +1,20 @@
 {
   "values": [
-    "luminex:white_luminex_wall",
-    "luminex:light_gray_luminex_wall",
-    "luminex:gray_luminex_wall",
-    "luminex:black_luminex_wall",
-    "luminex:brown_luminex_wall",
-    "luminex:red_luminex_wall",
-    "luminex:orange_luminex_wall",
-    "luminex:yellow_luminex_wall",
-    "luminex:lime_luminex_wall",
-    "luminex:green_luminex_wall",
-    "luminex:cyan_luminex_wall",
-    "luminex:light_blue_luminex_wall",
-    "luminex:blue_luminex_wall",
-    "luminex:purple_luminex_wall",
-    "luminex:magenta_luminex_wall",
-    "luminex:pink_luminex_wall"
+    "luminax:white_wall",
+    "luminax:light_gray_wall",
+    "luminax:gray_wall",
+    "luminax:black_wall",
+    "luminax:brown_wall",
+    "luminax:red_wall",
+    "luminax:orange_wall",
+    "luminax:yellow_wall",
+    "luminax:lime_wall",
+    "luminax:green_wall",
+    "luminax:cyan_wall",
+    "luminax:light_blue_wall",
+    "luminax:blue_wall",
+    "luminax:purple_wall",
+    "luminax:magenta_wall",
+    "luminax:pink_wall"
   ]
 }

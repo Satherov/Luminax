@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_green_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "luminax:green_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "luminax:green_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_green_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "luminax:green_wall"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "luminax:block/red_block",
+    "side": "luminax:block/red_block",
+    "top": "luminax:block/red_block"
+  }
+}

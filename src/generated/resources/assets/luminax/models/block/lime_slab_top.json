@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "luminax:block/lime_block",
+    "side": "luminax:block/lime_block",
+    "top": "luminax:block/lime_block"
+  }
+}

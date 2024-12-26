@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "luminax:pink_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "luminax:pink_button"
+  }
+}

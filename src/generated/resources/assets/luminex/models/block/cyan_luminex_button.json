@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/button",
-  "textures": {
-    "texture": "luminex:block/cyan_luminex_block"
-  }
-}

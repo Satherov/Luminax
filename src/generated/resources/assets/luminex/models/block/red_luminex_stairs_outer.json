@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "luminex:block/red_luminex_block",
-    "side": "luminex:block/red_luminex_block",
-    "top": "luminex:block/red_luminex_block"
-  }
-}

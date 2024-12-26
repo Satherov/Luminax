@@ -1,20 +1,20 @@
 {
   "values": [
-    "luminex:white_luminex_button",
-    "luminex:light_gray_luminex_button",
-    "luminex:gray_luminex_button",
-    "luminex:black_luminex_button",
-    "luminex:brown_luminex_button",
-    "luminex:red_luminex_button",
-    "luminex:orange_luminex_button",
-    "luminex:yellow_luminex_button",
-    "luminex:lime_luminex_button",
-    "luminex:green_luminex_button",
-    "luminex:cyan_luminex_button",
-    "luminex:light_blue_luminex_button",
-    "luminex:blue_luminex_button",
-    "luminex:purple_luminex_button",
-    "luminex:magenta_luminex_button",
-    "luminex:pink_luminex_button"
+    "luminax:white_button",
+    "luminax:light_gray_button",
+    "luminax:gray_button",
+    "luminax:black_button",
+    "luminax:brown_button",
+    "luminax:red_button",
+    "luminax:orange_button",
+    "luminax:yellow_button",
+    "luminax:lime_button",
+    "luminax:green_button",
+    "luminax:cyan_button",
+    "luminax:light_blue_button",
+    "luminax:blue_button",
+    "luminax:purple_button",
+    "luminax:magenta_button",
+    "luminax:pink_button"
   ]
 }
