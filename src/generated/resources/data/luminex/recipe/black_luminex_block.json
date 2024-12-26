@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "b": {
+      "tag": "c:dyes/black"
+    },
+    "g": {
+      "tag": "c:dusts/glowstone"
+    }
+  },
+  "pattern": [
+    "aga",
+    "gbg",
+    "aga"
+  ],
+  "result": {
+    "count": 4,
+    "id": "luminex:black_luminex_block"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "values": [
+    "luminex:white_luminex_wall",
+    "luminex:light_gray_luminex_wall",
+    "luminex:gray_luminex_wall",
+    "luminex:black_luminex_wall",
+    "luminex:brown_luminex_wall",
+    "luminex:red_luminex_wall",
+    "luminex:orange_luminex_wall",
+    "luminex:yellow_luminex_wall",
+    "luminex:lime_luminex_wall",
+    "luminex:green_luminex_wall",
+    "luminex:cyan_luminex_wall",
+    "luminex:light_blue_luminex_wall",
+    "luminex:blue_luminex_wall",
+    "luminex:purple_luminex_wall",
+    "luminex:magenta_luminex_wall",
+    "luminex:pink_luminex_wall"
+  ]
+}

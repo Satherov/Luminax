@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "luminex:block/orange_luminex_block",
+    "side": "luminex:block/orange_luminex_block",
+    "top": "luminex:block/orange_luminex_block"
+  }
+}
