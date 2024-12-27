@@ -1,0 +1,24 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "#texture"
+  },
+  "elements": [
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 11, 16, 8 ],
+      "shade": false,
+      "faces": {
+        "down":  { "texture": "#texture", "cullface": "down" },
+        "up":    { "texture": "#texture", "cullface": "up"},
+        "north": { "texture": "#texture", "cullface": "north" },
+        "west":  { "texture": "#texture" },
+        "east":  { "texture": "#texture" }
+      },
+      "neoforge_data": {
+        "block_light": 15,
+        "sky_light": 15
+      }
+    }
+  ]
+}

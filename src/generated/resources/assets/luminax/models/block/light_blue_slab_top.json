@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/slab_top",
+  "parent": "luminax:block/no_shade_slab_top",
   "textures": {
-    "bottom": "luminax:block/light_blue_block",
-    "side": "luminax:block/light_blue_block",
-    "top": "luminax:block/light_blue_block"
+    "texture": "luminax:block/light_blue_block"
   }
 }

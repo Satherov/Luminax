@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/pressure_plate_up",
+  "parent": "luminax:block/no_shade_pressure_plate_up",
   "textures": {
     "texture": "luminax:block/green_block"
   }

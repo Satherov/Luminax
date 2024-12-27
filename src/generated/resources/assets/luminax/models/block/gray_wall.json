@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/wall_inventory",
+  "parent": "luminax:block/no_shade_wall_inventory",
   "textures": {
-    "wall": "luminax:block/gray_block"
+    "texture": "luminax:block/gray_block"
   }
 }

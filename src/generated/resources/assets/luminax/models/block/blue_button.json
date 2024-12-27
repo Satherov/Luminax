@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/button",
+  "parent": "luminax:block/no_shade_button",
   "textures": {
     "texture": "luminax:block/blue_block"
   }

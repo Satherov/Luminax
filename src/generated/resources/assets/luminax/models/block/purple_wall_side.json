@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/template_wall_side",
+  "parent": "luminax:block/no_shade_wall_side",
   "textures": {
-    "wall": "luminax:block/purple_block"
+    "texture": "luminax:block/purple_block"
   }
 }
