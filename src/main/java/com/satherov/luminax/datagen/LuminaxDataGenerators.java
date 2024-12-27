@@ -1,6 +1,7 @@
 package com.satherov.luminax.datagen;
 
 import com.satherov.luminax.Luminax;
+import com.satherov.luminax.datagen.assets.LuminaxBlockModelProvider;
 import com.satherov.luminax.datagen.assets.LuminaxBlockStateProvider;
 import com.satherov.luminax.datagen.assets.LuminaxItemModelProvider;
 import com.satherov.luminax.datagen.assets.lang.EN_USProvider;
@@ -38,6 +39,7 @@ public class LuminaxDataGenerators {
         LuminaxDataProvider provider = new LuminaxDataProvider();
 
         // Assets
+        provider.addSubProvider(event.includeClient(), new LuminaxBlockModelProvider(packOutput, fileHelper));
         provider.addSubProvider(event.includeClient(), new LuminaxBlockStateProvider(generator, fileHelper));
         provider.addSubProvider(event.includeClient(), new LuminaxItemModelProvider(packOutput, fileHelper));
         // Languages

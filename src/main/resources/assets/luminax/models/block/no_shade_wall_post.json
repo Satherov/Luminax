@@ -1,0 +1,26 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "#texture"
+  },
+  "elements": [
+    {
+      "from": [ 4, 0, 4 ],
+      "to": [ 12, 16, 12 ],
+      "shade": false,
+      "faces": {
+        "down":  { "texture": "#texture", "cullface": "down" },
+        "up":    { "texture": "#texture", "cullface": "up" },
+        "north": { "texture": "#texture" },
+        "south": { "texture": "#texture" },
+        "west":  { "texture": "#texture" },
+        "east":  { "texture": "#texture" }
+      },
+      "neoforge_data": {
+        "block_light": 15,
+        "sky_light": 15
+      },
+      "__comment": "Center post"
+    }
+  ]
+}

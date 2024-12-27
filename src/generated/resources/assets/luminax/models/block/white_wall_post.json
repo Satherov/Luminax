@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/template_wall_post",
+  "parent": "luminax:block/no_shade_wall_post",
   "textures": {
-    "wall": "luminax:block/white_block"
+    "texture": "luminax:block/white_block"
   }
 }

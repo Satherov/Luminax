@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/slab",
+  "parent": "luminax:block/no_shade_slab",
   "textures": {
-    "bottom": "luminax:block/gray_block",
-    "side": "luminax:block/gray_block",
-    "top": "luminax:block/gray_block"
+    "texture": "luminax:block/gray_block"
   }
 }

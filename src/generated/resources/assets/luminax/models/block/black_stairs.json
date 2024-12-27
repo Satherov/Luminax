@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/stairs",
+  "parent": "luminax:block/no_shade_stair",
   "textures": {
-    "bottom": "luminax:block/black_block",
-    "side": "luminax:block/black_block",
-    "top": "luminax:block/black_block"
+    "texture": "luminax:block/black_block"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/pressure_plate_down",
+  "parent": "luminax:block/no_shade_pressure_plate_down",
   "textures": {
     "texture": "luminax:block/light_gray_block"
   }

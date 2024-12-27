@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/template_wall_side_tall",
+  "parent": "luminax:block/no_shade_wall_side_tall",
   "textures": {
-    "wall": "luminax:block/green_block"
+    "texture": "luminax:block/green_block"
   }
 }

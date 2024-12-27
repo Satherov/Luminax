@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "luminax:block/no_shade_block",
   "textures": {
-    "all": "luminax:block/green_block"
+    "texture": "luminax:block/green_block"
   }
 }
