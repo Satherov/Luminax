@@ -1,0 +1,20 @@
+{
+  "values": [
+    "luminax:dim_white_wall",
+    "luminax:dim_light_gray_wall",
+    "luminax:dim_gray_wall",
+    "luminax:dim_black_wall",
+    "luminax:dim_brown_wall",
+    "luminax:dim_red_wall",
+    "luminax:dim_orange_wall",
+    "luminax:dim_yellow_wall",
+    "luminax:dim_lime_wall",
+    "luminax:dim_green_wall",
+    "luminax:dim_cyan_wall",
+    "luminax:dim_light_blue_wall",
+    "luminax:dim_blue_wall",
+    "luminax:dim_purple_wall",
+    "luminax:dim_magenta_wall",
+    "luminax:dim_pink_wall"
+  ]
+}

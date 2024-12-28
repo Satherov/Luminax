@@ -1,0 +1,20 @@
+{
+  "values": [
+    "luminax:dim_white_block",
+    "luminax:dim_light_gray_block",
+    "luminax:dim_gray_block",
+    "luminax:dim_black_block",
+    "luminax:dim_brown_block",
+    "luminax:dim_red_block",
+    "luminax:dim_orange_block",
+    "luminax:dim_yellow_block",
+    "luminax:dim_lime_block",
+    "luminax:dim_green_block",
+    "luminax:dim_cyan_block",
+    "luminax:dim_light_blue_block",
+    "luminax:dim_blue_block",
+    "luminax:dim_purple_block",
+    "luminax:dim_magenta_block",
+    "luminax:dim_pink_block"
+  ]
+}

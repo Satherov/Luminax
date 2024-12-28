@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_button",
+  "textures": {
+    "texture": "luminax:block/pink_block"
+  }
+}

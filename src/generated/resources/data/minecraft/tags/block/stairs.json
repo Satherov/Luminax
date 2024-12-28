@@ -1,20 +1,36 @@
 {
   "values": [
     "luminax:white_stairs",
+    "luminax:dim_white_stairs",
     "luminax:light_gray_stairs",
+    "luminax:dim_light_gray_stairs",
     "luminax:gray_stairs",
+    "luminax:dim_gray_stairs",
     "luminax:black_stairs",
+    "luminax:dim_black_stairs",
     "luminax:brown_stairs",
+    "luminax:dim_brown_stairs",
     "luminax:red_stairs",
+    "luminax:dim_red_stairs",
     "luminax:orange_stairs",
+    "luminax:dim_orange_stairs",
     "luminax:yellow_stairs",
+    "luminax:dim_yellow_stairs",
     "luminax:lime_stairs",
+    "luminax:dim_lime_stairs",
     "luminax:green_stairs",
+    "luminax:dim_green_stairs",
     "luminax:cyan_stairs",
+    "luminax:dim_cyan_stairs",
     "luminax:light_blue_stairs",
+    "luminax:dim_light_blue_stairs",
     "luminax:blue_stairs",
+    "luminax:dim_blue_stairs",
     "luminax:purple_stairs",
+    "luminax:dim_purple_stairs",
     "luminax:magenta_stairs",
-    "luminax:pink_stairs"
+    "luminax:dim_magenta_stairs",
+    "luminax:pink_stairs",
+    "luminax:dim_pink_stairs"
   ]
 }

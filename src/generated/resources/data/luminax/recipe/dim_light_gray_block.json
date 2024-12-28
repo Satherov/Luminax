@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "b": {
+      "tag": "c:dyes/light_gray"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "awa",
+    "wbw",
+    "awa"
+  ],
+  "result": {
+    "count": 4,
+    "id": "luminax:dim_light_gray_block"
+  }
+}

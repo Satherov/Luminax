@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_button_inventory",
+  "textures": {
+    "texture": "luminax:block/lime_block"
+  }
+}

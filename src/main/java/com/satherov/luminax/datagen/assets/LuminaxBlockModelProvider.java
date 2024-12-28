@@ -24,6 +24,13 @@ public class LuminaxBlockModelProvider extends BlockModelProvider {
             buttonModel(set.BUTTON, set.BLOCK);
             pressurePlateModel(set.PRESSURE_PLATE, set.BLOCK);
             wallModel(set.WALL, set.BLOCK);
+
+            blockModel(set.DIM_BLOCK, set.BLOCK);
+            slabModel(set.DIM_SLAB, set.BLOCK);
+            stairModel(set.DIM_STAIRS, set.BLOCK);
+            buttonModel(set.DIM_BUTTON, set.BLOCK);
+            pressurePlateModel(set.DIM_PRESSURE_PLATE, set.BLOCK);
+            wallModel(set.DIM_WALL, set.BLOCK);
         });
     }
 
@@ -33,6 +40,10 @@ public class LuminaxBlockModelProvider extends BlockModelProvider {
 
     private void blockModel(DeferredHolder<Block, ? extends Block> block) {
         this.singleTexture("block/" + block.getId().getPath(), ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_block"), "texture", block(block));
+    }
+
+    private void blockModel(DeferredHolder<Block, ? extends Block> block, DeferredHolder<Block, ? extends Block> block2) {
+        this.singleTexture("block/" + block.getId().getPath(), ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_block"), "texture", block(block2));
     }
 
     private void slabModel(DeferredHolder<Block, ? extends SlabBlock> slab, DeferredHolder<Block, ? extends Block> block) {

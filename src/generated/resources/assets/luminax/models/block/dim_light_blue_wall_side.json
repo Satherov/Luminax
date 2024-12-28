@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_wall_side",
+  "textures": {
+    "texture": "luminax:block/light_blue_block"
+  }
+}

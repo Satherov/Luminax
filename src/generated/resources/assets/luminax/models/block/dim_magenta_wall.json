@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_wall_inventory",
+  "textures": {
+    "texture": "luminax:block/magenta_block"
+  }
+}

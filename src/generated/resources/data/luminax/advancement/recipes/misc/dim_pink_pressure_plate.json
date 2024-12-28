@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dim_pink_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "luminax:dim_pink_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "luminax:dim_pink_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dim_pink_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "luminax:dim_pink_pressure_plate"
+    ]
+  }
+}

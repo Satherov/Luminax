@@ -8,6 +8,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 
 import java.util.HashMap;
@@ -61,6 +62,17 @@ public class LuminaxRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_stone", has(Items.STONE));
     }
 
+    private ShapedRecipeBuilder dimBlock(TagKey<Item>  color, Item output) {
+        return ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 4)
+                .pattern("awa")
+                .pattern("wbw")
+                .pattern("awa")
+                .define('a', Items.STONE)
+                .define('b', color)
+                .define('w', Blocks.WHITE_WOOL)
+                .unlockedBy("has_stone", has(Items.STONE));
+    }
+
     private ShapedRecipeBuilder slab(Item item, Item output) {
         return ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 6)
                 .pattern("aaa")
@@ -85,6 +97,13 @@ public class LuminaxRecipeProvider extends RecipeProvider {
                 .unlockedBy(String.format("has_%s", getItemName(item)), has(item));
     }
 
+    private ShapedRecipeBuilder pressurePlate(Item item, Item output) {
+        return ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 1)
+                .pattern("aa")
+                .define('a', item)
+                .unlockedBy(String.format("has_%s", getItemName(item)), has(item));
+    }
+
     private ShapelessRecipeBuilder button(Item item, Item output) {
         return ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output)
                 .requires(item)
@@ -99,7 +118,16 @@ public class LuminaxRecipeProvider extends RecipeProvider {
             slab(set.BLOCK.get().asItem(), set.SLAB.get().asItem()).save(recipeOutput);
             stair(set.BLOCK.get().asItem(), set.STAIRS.get().asItem()).save(recipeOutput);
             wall(set.BLOCK.get().asItem(), set.WALL.get().asItem()).save(recipeOutput);
+            pressurePlate(set.BLOCK.get().asItem(), set.PRESSURE_PLATE.get().asItem()).save(recipeOutput);
             button(set.BLOCK.get().asItem(), set.BUTTON.get().asItem()).save(recipeOutput);
+
+            tint(LuminaxRegistry.ITEMTAG_DIM_BLOCK, colors.get(set.BLOCK.get().asItem()), set.DIM_BLOCK.get().asItem()).save(recipeOutput, "tint_" + set.DIM_BLOCK.getId().getPath());
+            dimBlock(colors.get(set.BLOCK.get().asItem()), set.DIM_BLOCK.get().asItem()).save(recipeOutput);
+            slab(set.DIM_BLOCK.get().asItem(), set.DIM_SLAB.get().asItem()).save(recipeOutput);
+            stair(set.DIM_BLOCK.get().asItem(), set.DIM_STAIRS.get().asItem()).save(recipeOutput);
+            wall(set.DIM_BLOCK.get().asItem(), set.DIM_WALL.get().asItem()).save(recipeOutput);
+            pressurePlate(set.DIM_BLOCK.get().asItem(), set.DIM_PRESSURE_PLATE.get().asItem()).save(recipeOutput);
+            button(set.DIM_BLOCK.get().asItem(), set.DIM_BUTTON.get().asItem()).save(recipeOutput);
         });
     }
 }

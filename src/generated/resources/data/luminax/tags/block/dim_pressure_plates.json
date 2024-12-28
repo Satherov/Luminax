@@ -1,0 +1,20 @@
+{
+  "values": [
+    "luminax:dim_white_pressure_plate",
+    "luminax:dim_light_gray_pressure_plate",
+    "luminax:dim_gray_pressure_plate",
+    "luminax:dim_black_pressure_plate",
+    "luminax:dim_brown_pressure_plate",
+    "luminax:dim_red_pressure_plate",
+    "luminax:dim_orange_pressure_plate",
+    "luminax:dim_yellow_pressure_plate",
+    "luminax:dim_lime_pressure_plate",
+    "luminax:dim_green_pressure_plate",
+    "luminax:dim_cyan_pressure_plate",
+    "luminax:dim_light_blue_pressure_plate",
+    "luminax:dim_blue_pressure_plate",
+    "luminax:dim_purple_pressure_plate",
+    "luminax:dim_magenta_pressure_plate",
+    "luminax:dim_pink_pressure_plate"
+  ]
+}

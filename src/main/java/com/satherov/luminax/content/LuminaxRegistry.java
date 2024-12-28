@@ -44,17 +44,29 @@ public class LuminaxRegistry {
     public static final BlockSet PINK = new BlockSet("pink");
 
     public static final TagKey<Block> BLOCKTAG_BLOCK = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "blocks"));
+    public static final TagKey<Block> BLOCKTAG_DIM_BLOCK = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_blocks"));
     public static final TagKey<Block> BLOCKTAG_SLAB = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "slabs"));
+    public static final TagKey<Block> BLOCKTAG_DIM_SLAB = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_slabs"));
     public static final TagKey<Block> BLOCKTAG_STAIRS = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "stairs"));
+    public static final TagKey<Block> BLOCKTAG_DIM_STAIRS = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_stairs"));
     public static final TagKey<Block> BLOCKTAG_WALL = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "walls"));
+    public static final TagKey<Block> BLOCKTAG_DIM_WALL = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_walls"));
     public static final TagKey<Block> BLOCKTAG_PRESSURE_PLATE = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "pressure_plates"));
+    public static final TagKey<Block> BLOCKTAG_DIM_PRESSURE_PLATE = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_pressure_plates"));
     public static final TagKey<Block> BLOCKTAG_BUTTON = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "buttons"));
+    public static final TagKey<Block> BLOCKTAG_DIM_BUTTON = BlockTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_buttons"));
 
     public static final TagKey<Item> ITEMTAG_BLOCK = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "blocks"));
+    public static final TagKey<Item> ITEMTAG_DIM_BLOCK = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_blocks"));
     public static final TagKey<Item> ITEMTAG_SLAB = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "slabs"));
+    public static final TagKey<Item> ITEMTAG_DIM_SLAB = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_slabs"));
     public static final TagKey<Item> ITEMTAG_STAIRS = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "stairs"));
+    public static final TagKey<Item> ITEMTAG_DIM_STAIRS = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_stairs"));
     public static final TagKey<Item> ITEMTAG_WALL = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "walls"));
+    public static final TagKey<Item> ITEMTAG_DIM_WALL = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_walls"));
     public static final TagKey<Item> ITEMTAG_PRESSURE_PLATE = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "pressure_plates"));
+    public static final TagKey<Item> ITEMTAG_DIM_PRESSURE_PLATE = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_pressure_plates"));
     public static final TagKey<Item> ITEMTAG_BUTTON = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "buttons"));
+    public static final TagKey<Item> ITEMTAG_DIM_BUTTON = ItemTags.create(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "dim_buttons"));
 
 }

@@ -1,20 +1,36 @@
 {
   "values": [
     "luminax:white_slab",
+    "luminax:dim_white_slab",
     "luminax:light_gray_slab",
+    "luminax:dim_light_gray_slab",
     "luminax:gray_slab",
+    "luminax:dim_gray_slab",
     "luminax:black_slab",
+    "luminax:dim_black_slab",
     "luminax:brown_slab",
+    "luminax:dim_brown_slab",
     "luminax:red_slab",
+    "luminax:dim_red_slab",
     "luminax:orange_slab",
+    "luminax:dim_orange_slab",
     "luminax:yellow_slab",
+    "luminax:dim_yellow_slab",
     "luminax:lime_slab",
+    "luminax:dim_lime_slab",
     "luminax:green_slab",
+    "luminax:dim_green_slab",
     "luminax:cyan_slab",
+    "luminax:dim_cyan_slab",
     "luminax:light_blue_slab",
+    "luminax:dim_light_blue_slab",
     "luminax:blue_slab",
+    "luminax:dim_blue_slab",
     "luminax:purple_slab",
+    "luminax:dim_purple_slab",
     "luminax:magenta_slab",
-    "luminax:pink_slab"
+    "luminax:dim_magenta_slab",
+    "luminax:pink_slab",
+    "luminax:dim_pink_slab"
   ]
 }

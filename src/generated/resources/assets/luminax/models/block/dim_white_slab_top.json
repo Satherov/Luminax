@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_slab_top",
+  "textures": {
+    "texture": "luminax:block/white_block"
+  }
+}

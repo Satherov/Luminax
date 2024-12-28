@@ -1,20 +1,36 @@
 {
   "values": [
     "luminax:white_button",
+    "luminax:dim_white_button",
     "luminax:light_gray_button",
+    "luminax:dim_light_gray_button",
     "luminax:gray_button",
+    "luminax:dim_gray_button",
     "luminax:black_button",
+    "luminax:dim_black_button",
     "luminax:brown_button",
+    "luminax:dim_brown_button",
     "luminax:red_button",
+    "luminax:dim_red_button",
     "luminax:orange_button",
+    "luminax:dim_orange_button",
     "luminax:yellow_button",
+    "luminax:dim_yellow_button",
     "luminax:lime_button",
+    "luminax:dim_lime_button",
     "luminax:green_button",
+    "luminax:dim_green_button",
     "luminax:cyan_button",
+    "luminax:dim_cyan_button",
     "luminax:light_blue_button",
+    "luminax:dim_light_blue_button",
     "luminax:blue_button",
+    "luminax:dim_blue_button",
     "luminax:purple_button",
+    "luminax:dim_purple_button",
     "luminax:magenta_button",
-    "luminax:pink_button"
+    "luminax:dim_magenta_button",
+    "luminax:pink_button",
+    "luminax:dim_pink_button"
   ]
 }

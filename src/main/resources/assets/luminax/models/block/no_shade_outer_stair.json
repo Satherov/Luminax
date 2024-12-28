@@ -31,6 +31,10 @@
         "south": { "uv": [ 8, 0, 16,  8 ], "texture": "#texture", "cullface": "south" },
         "west":  { "uv": [ 8, 0, 16,  8 ], "texture": "#texture", "cullface": "west" },
         "east":  { "uv": [ 0, 0,  8,  8 ], "texture": "#texture", "cullface": "east" }
+      },
+      "neoforge_data": {
+        "block_light": 15,
+        "sky_light": 15
       }
     }
   ]

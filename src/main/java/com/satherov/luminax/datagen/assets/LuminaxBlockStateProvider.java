@@ -31,6 +31,13 @@ public class LuminaxBlockStateProvider extends BlockStateProvider {
             buttonBlock(set.BUTTON);
             pressurePlateBlock(set.PRESSURE_PLATE);
             wallBlock(set.WALL);
+
+            simpleBlock(set.DIM_BLOCK.get(), getExistingFile(set.DIM_BLOCK.getId().getPath()));
+            slabBlock(set.DIM_SLAB, set.DIM_BLOCK);
+            stairsBlock(set.DIM_STAIRS);
+            buttonBlock(set.DIM_BUTTON);
+            pressurePlateBlock(set.DIM_PRESSURE_PLATE);
+            wallBlock(set.DIM_WALL);
         });
     }
 

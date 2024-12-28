@@ -1,0 +1,20 @@
+{
+  "values": [
+    "luminax:dim_white_stairs",
+    "luminax:dim_light_gray_stairs",
+    "luminax:dim_gray_stairs",
+    "luminax:dim_black_stairs",
+    "luminax:dim_brown_stairs",
+    "luminax:dim_red_stairs",
+    "luminax:dim_orange_stairs",
+    "luminax:dim_yellow_stairs",
+    "luminax:dim_lime_stairs",
+    "luminax:dim_green_stairs",
+    "luminax:dim_cyan_stairs",
+    "luminax:dim_light_blue_stairs",
+    "luminax:dim_blue_stairs",
+    "luminax:dim_purple_stairs",
+    "luminax:dim_magenta_stairs",
+    "luminax:dim_pink_stairs"
+  ]
+}

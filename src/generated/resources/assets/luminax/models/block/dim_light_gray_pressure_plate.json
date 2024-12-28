@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_pressure_plate_up",
+  "textures": {
+    "texture": "luminax:block/light_gray_block"
+  }
+}

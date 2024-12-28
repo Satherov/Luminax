@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_inner_stair",
+  "textures": {
+    "texture": "luminax:block/gray_block"
+  }
+}

@@ -24,6 +24,13 @@ public class LuminaxItemModelProvider extends ItemModelProvider {
             blockModel(set.WALL);
             blockModel(set.PRESSURE_PLATE);
             buttonModel(set.BUTTON);
+
+            blockModel(set.DIM_BLOCK);
+            blockModel(set.DIM_SLAB);
+            blockModel(set.DIM_STAIRS);
+            blockModel(set.DIM_WALL);
+            blockModel(set.DIM_PRESSURE_PLATE);
+            buttonModel(set.DIM_BUTTON);
         });
     }
 

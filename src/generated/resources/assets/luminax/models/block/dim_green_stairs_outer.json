@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_outer_stair",
+  "textures": {
+    "texture": "luminax:block/green_block"
+  }
+}
