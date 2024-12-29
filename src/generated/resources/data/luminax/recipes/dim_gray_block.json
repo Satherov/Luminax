@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "b": {
+      "tag": "forge:dyes/gray"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "awa",
+    "wbw",
+    "awa"
+  ],
+  "result": {
+    "count": 4,
+    "item": "luminax:dim_gray_block"
+  },
+  "show_notification": true
+}

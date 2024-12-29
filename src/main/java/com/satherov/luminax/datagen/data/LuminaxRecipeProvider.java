@@ -2,23 +2,22 @@ package com.satherov.luminax.datagen.data;
 
 import com.satherov.luminax.content.LuminaxRegistry;
 import com.satherov.luminax.content.SetHelper;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
-import net.neoforged.neoforge.common.Tags;
+import net.minecraftforge.common.Tags;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.CompletableFuture;
+import java.util.function.Consumer;
 
 public class LuminaxRecipeProvider extends RecipeProvider {
 
-    public LuminaxRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries);
+    public LuminaxRecipeProvider(PackOutput output) {
+        super(output);
     }
 
     private static final Map<Item, TagKey<Item>> colors = new HashMap<>();
@@ -111,7 +110,7 @@ public class LuminaxRecipeProvider extends RecipeProvider {
     }
 
     @Override
-    protected void buildRecipes(RecipeOutput recipeOutput) {
+    protected void buildRecipes(Consumer<FinishedRecipe> recipeOutput) {
         SetHelper.apply(set -> {
             tint(LuminaxRegistry.ITEMTAG_BLOCK, colors.get(set.BLOCK.get().asItem()), set.BLOCK.get().asItem()).save(recipeOutput, "tint_" + set.BLOCK.getId().getPath());
             block(colors.get(set.BLOCK.get().asItem()), set.BLOCK.get().asItem()).save(recipeOutput);

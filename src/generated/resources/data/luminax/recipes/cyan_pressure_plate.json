@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "luminax:cyan_block"
+    }
+  },
+  "pattern": [
+    "aa"
+  ],
+  "result": {
+    "item": "luminax:cyan_pressure_plate"
+  },
+  "show_notification": true
+}

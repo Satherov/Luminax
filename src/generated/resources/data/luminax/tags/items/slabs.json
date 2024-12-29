@@ -1,0 +1,20 @@
+{
+  "values": [
+    "luminax:white_slab",
+    "luminax:light_gray_slab",
+    "luminax:gray_slab",
+    "luminax:black_slab",
+    "luminax:brown_slab",
+    "luminax:red_slab",
+    "luminax:orange_slab",
+    "luminax:yellow_slab",
+    "luminax:lime_slab",
+    "luminax:green_slab",
+    "luminax:cyan_slab",
+    "luminax:light_blue_slab",
+    "luminax:blue_slab",
+    "luminax:purple_slab",
+    "luminax:magenta_slab",
+    "luminax:pink_slab"
+  ]
+}

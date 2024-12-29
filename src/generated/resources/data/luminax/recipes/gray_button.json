@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "luminax:gray_block"
+    }
+  ],
+  "result": {
+    "item": "luminax:gray_button"
+  }
+}

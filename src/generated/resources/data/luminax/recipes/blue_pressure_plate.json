@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "luminax:blue_block"
+    }
+  },
+  "pattern": [
+    "aa"
+  ],
+  "result": {
+    "item": "luminax:blue_pressure_plate"
+  },
+  "show_notification": true
+}

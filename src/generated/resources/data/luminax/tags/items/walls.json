@@ -1,0 +1,20 @@
+{
+  "values": [
+    "luminax:white_wall",
+    "luminax:light_gray_wall",
+    "luminax:gray_wall",
+    "luminax:black_wall",
+    "luminax:brown_wall",
+    "luminax:red_wall",
+    "luminax:orange_wall",
+    "luminax:yellow_wall",
+    "luminax:lime_wall",
+    "luminax:green_wall",
+    "luminax:cyan_wall",
+    "luminax:light_blue_wall",
+    "luminax:blue_wall",
+    "luminax:purple_wall",
+    "luminax:magenta_wall",
+    "luminax:pink_wall"
+  ]
+}

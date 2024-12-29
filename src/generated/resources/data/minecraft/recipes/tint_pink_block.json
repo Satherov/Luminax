@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "luminax:blocks"
+    },
+    "b": {
+      "tag": "forge:dyes/pink"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "result": {
+    "count": 8,
+    "item": "luminax:pink_block"
+  },
+  "show_notification": true
+}

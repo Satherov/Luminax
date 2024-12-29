@@ -5,9 +5,9 @@ import com.satherov.luminax.content.SetHelper;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.ButtonBlock;
-import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.DeferredHolder;
+import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.RegistryObject;
 
 public class LuminaxItemModelProvider extends ItemModelProvider {
 
@@ -34,11 +34,11 @@ public class LuminaxItemModelProvider extends ItemModelProvider {
         });
     }
 
-    public void blockModel(DeferredHolder<Block, ? extends Block> block) {
+    public void blockModel(RegistryObject<? extends Block> block) {
         withExistingParent(block.getId().getPath(), modLoc("block/" + block.getId().getPath()));
     }
 
-    public void buttonModel(DeferredHolder<Block, ? extends ButtonBlock> block) {
+    public void buttonModel(RegistryObject<? extends ButtonBlock> block) {
         withExistingParent(block.getId().getPath(), modLoc("block/" + block.getId().getPath() + "_inventory"));
     }
 }

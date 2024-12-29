@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "luminax:blocks"
+    },
+    "b": {
+      "tag": "forge:dyes/light_blue"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "result": {
+    "count": 8,
+    "item": "luminax:light_blue_block"
+  },
+  "show_notification": true
+}

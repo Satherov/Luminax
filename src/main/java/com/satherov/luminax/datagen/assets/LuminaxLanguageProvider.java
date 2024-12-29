@@ -2,7 +2,7 @@ package com.satherov.luminax.datagen.assets;
 
 import com.satherov.luminax.Luminax;
 import net.minecraft.data.PackOutput;
-import net.neoforged.neoforge.common.data.LanguageProvider;
+import net.minecraftforge.common.data.LanguageProvider;
 
 public class LuminaxLanguageProvider extends LanguageProvider {
 

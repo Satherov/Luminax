@@ -16,16 +16,16 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.data.registries.VanillaRegistries;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = Luminax.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = Luminax.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class LuminaxDataGenerators {
 
     @SubscribeEvent
@@ -51,10 +51,10 @@ public class LuminaxDataGenerators {
         provider.addSubProvider(event.includeServer(), new LuminaxItemTagProvider(packOutput, lookupProvider, blockTags.contentsGetter()));
 
         // Recipes
-        provider.addSubProvider(event.includeServer(), new LuminaxRecipeProvider(packOutput, lookupProvider));
+        provider.addSubProvider(event.includeServer(), new LuminaxRecipeProvider(packOutput));
 
         // Loot Tables
-        provider.addSubProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(LuminaxLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+        provider.addSubProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(LuminaxLootTableProvider::new, LootContextParamSets.BLOCK))));
 
         generator.addProvider(true, provider);
     }

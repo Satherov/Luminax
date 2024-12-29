@@ -17,7 +17,7 @@
           "west": { "texture": "#texture", "cullface": "west" },
           "east": { "texture": "#texture", "cullface": "east" }
       },
-      "neoforge_data": {
+      "forge_data": {
         "block_light": 15,
         "sky_light": 15
       }

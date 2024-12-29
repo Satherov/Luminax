@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "luminax:purple_block"
+    }
+  ],
+  "result": {
+    "item": "luminax:purple_button"
+  }
+}

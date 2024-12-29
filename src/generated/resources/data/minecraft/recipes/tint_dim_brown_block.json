@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "luminax:dim_blocks"
+    },
+    "b": {
+      "tag": "forge:dyes/brown"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "result": {
+    "count": 8,
+    "item": "luminax:dim_brown_block"
+  },
+  "show_notification": true
+}

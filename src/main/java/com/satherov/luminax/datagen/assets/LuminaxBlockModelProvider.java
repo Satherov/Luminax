@@ -5,9 +5,9 @@ import com.satherov.luminax.content.SetHelper;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
-import net.neoforged.neoforge.client.model.generators.BlockModelProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.DeferredHolder;
+import net.minecraftforge.client.model.generators.BlockModelProvider;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.RegistryObject;
 
 public class LuminaxBlockModelProvider extends BlockModelProvider {
 
@@ -34,44 +34,44 @@ public class LuminaxBlockModelProvider extends BlockModelProvider {
         });
     }
 
-    private ResourceLocation block(DeferredHolder<Block, ? extends Block> block) {
+    private ResourceLocation block(RegistryObject<? extends Block> block) {
         return modLoc("block/" + block.getId().getPath());
     }
 
-    private void blockModel(DeferredHolder<Block, ? extends Block> block) {
-        this.singleTexture("block/" + block.getId().getPath(), ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_block"), "texture", block(block));
+    private void blockModel(RegistryObject<? extends Block> block) {
+        this.singleTexture("block/" + block.getId().getPath(), new ResourceLocation(Luminax.MOD_ID, "block/no_shade_block"), "texture", block(block));
     }
 
-    private void blockModel(DeferredHolder<Block, ? extends Block> block, DeferredHolder<Block, ? extends Block> block2) {
-        this.singleTexture("block/" + block.getId().getPath(), ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_block"), "texture", block(block2));
+    private void blockModel(RegistryObject<? extends Block> block, RegistryObject<? extends Block> block2) {
+        this.singleTexture("block/" + block.getId().getPath(), new ResourceLocation(Luminax.MOD_ID, "block/no_shade_block"), "texture", block(block2));
     }
 
-    private void slabModel(DeferredHolder<Block, ? extends SlabBlock> slab, DeferredHolder<Block, ? extends Block> block) {
-        this.singleTexture("block/" + slab.getId().getPath(), ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_slab"), "texture", block(block));
-        this.singleTexture("block/" + slab.getId().getPath() + "_top", ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_slab_top"), "texture", block(block));
+    private void slabModel(RegistryObject<? extends SlabBlock> slab, RegistryObject<? extends Block> block) {
+        this.singleTexture("block/" + slab.getId().getPath(), new ResourceLocation(Luminax.MOD_ID, "block/no_shade_slab"), "texture", block(block));
+        this.singleTexture("block/" + slab.getId().getPath() + "_top", new ResourceLocation(Luminax.MOD_ID, "block/no_shade_slab_top"), "texture", block(block));
     }
 
-    private void stairModel(DeferredHolder<Block, ? extends StairBlock> stair, DeferredHolder<Block, ? extends Block> block) {
-        this.singleTexture("block/" + stair.getId().getPath(), ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_stair"), "texture", block(block));
-        this.singleTexture("block/" + stair.getId().getPath() + "_inner", ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_inner_stair"), "texture", block(block));
-        this.singleTexture("block/" + stair.getId().getPath() + "_outer", ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_outer_stair"), "texture", block(block));
+    private void stairModel(RegistryObject<? extends StairBlock> stair, RegistryObject<? extends Block> block) {
+        this.singleTexture("block/" + stair.getId().getPath(), new ResourceLocation(Luminax.MOD_ID, "block/no_shade_stair"), "texture", block(block));
+        this.singleTexture("block/" + stair.getId().getPath() + "_inner", new ResourceLocation(Luminax.MOD_ID, "block/no_shade_inner_stair"), "texture", block(block));
+        this.singleTexture("block/" + stair.getId().getPath() + "_outer", new ResourceLocation(Luminax.MOD_ID, "block/no_shade_outer_stair"), "texture", block(block));
     }
 
-    private void buttonModel(DeferredHolder<Block, ? extends ButtonBlock> button, DeferredHolder<Block, ? extends Block> block) {
-        this.singleTexture("block/" + button.getId().getPath(), ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_button"), "texture", block(block));
-        this.singleTexture("block/" + button.getId().getPath() + "_pressed", ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_button_pressed"), block(block));
-        this.singleTexture("block/" + button.getId().getPath() + "_inventory", ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_button_inventory"), "texture", block(block));
+    private void buttonModel(RegistryObject<? extends ButtonBlock> button, RegistryObject<? extends Block> block) {
+        this.singleTexture("block/" + button.getId().getPath(), new ResourceLocation(Luminax.MOD_ID, "block/no_shade_button"), "texture", block(block));
+        this.singleTexture("block/" + button.getId().getPath() + "_pressed", new ResourceLocation(Luminax.MOD_ID, "block/no_shade_button_pressed"), block(block));
+        this.singleTexture("block/" + button.getId().getPath() + "_inventory", new ResourceLocation(Luminax.MOD_ID, "block/no_shade_button_inventory"), "texture", block(block));
     }
 
-    private void pressurePlateModel(DeferredHolder<Block, ? extends PressurePlateBlock> pressurePlate, DeferredHolder<Block, ? extends Block> block) {
-        this.singleTexture("block/" + pressurePlate.getId().getPath(), ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_pressure_plate_up"), "texture", block(block));
-        this.singleTexture("block/" + pressurePlate.getId().getPath() + "_down", ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_pressure_plate_down"), "texture", block(block));
+    private void pressurePlateModel(RegistryObject<? extends PressurePlateBlock> pressurePlate, RegistryObject<? extends Block> block) {
+        this.singleTexture("block/" + pressurePlate.getId().getPath(), new ResourceLocation(Luminax.MOD_ID, "block/no_shade_pressure_plate_up"), "texture", block(block));
+        this.singleTexture("block/" + pressurePlate.getId().getPath() + "_down", new ResourceLocation(Luminax.MOD_ID, "block/no_shade_pressure_plate_down"), "texture", block(block));
     }
 
-    private void wallModel(DeferredHolder<Block, ? extends WallBlock> wall, DeferredHolder<Block, ? extends Block> block) {
-        this.singleTexture("block/" + wall.getId().getPath(), ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_wall_inventory"), "texture", block(block));
-        this.singleTexture("block/" + wall.getId().getPath() + "_post", ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_wall_post"), "texture", block(block));
-        this.singleTexture("block/" + wall.getId().getPath() + "_side", ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_wall_side"), "texture", block(block));
-        this.singleTexture("block/" + wall.getId().getPath() + "_side_tall", ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, "block/no_shade_wall_side_tall"), "texture", block(block));
+    private void wallModel(RegistryObject<? extends WallBlock> wall, RegistryObject<? extends Block> block) {
+        this.singleTexture("block/" + wall.getId().getPath(), new ResourceLocation(Luminax.MOD_ID, "block/no_shade_wall_inventory"), "texture", block(block));
+        this.singleTexture("block/" + wall.getId().getPath() + "_post", new ResourceLocation(Luminax.MOD_ID, "block/no_shade_wall_post"), "texture", block(block));
+        this.singleTexture("block/" + wall.getId().getPath() + "_side", new ResourceLocation(Luminax.MOD_ID, "block/no_shade_wall_side"), "texture", block(block));
+        this.singleTexture("block/" + wall.getId().getPath() + "_side_tall", new ResourceLocation(Luminax.MOD_ID, "block/no_shade_wall_side_tall"), "texture", block(block));
     }
 }

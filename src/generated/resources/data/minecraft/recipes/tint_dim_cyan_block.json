@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "luminax:dim_blocks"
+    },
+    "b": {
+      "tag": "forge:dyes/cyan"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "result": {
+    "count": 8,
+    "item": "luminax:dim_cyan_block"
+  },
+  "show_notification": true
+}

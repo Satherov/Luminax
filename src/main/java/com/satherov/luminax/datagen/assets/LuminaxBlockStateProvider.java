@@ -7,12 +7,12 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.*;
-import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
-import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
-import net.neoforged.neoforge.client.model.generators.ModelFile;
-import net.neoforged.neoforge.client.model.generators.MultiPartBlockStateBuilder;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.DeferredHolder;
+import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.client.model.generators.MultiPartBlockStateBuilder;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Map;
 
@@ -41,15 +41,15 @@ public class LuminaxBlockStateProvider extends BlockStateProvider {
         });
     }
 
-    private ResourceLocation block(DeferredHolder<Block, ? extends Block> block) {
+    private ResourceLocation block(RegistryObject<? extends Block> block) {
         return modLoc("block/" + block.getId().getPath());
     }
 
     private ModelFile getExistingFile(String path) {
-        return models().getExistingFile(ResourceLocation.fromNamespaceAndPath(Luminax.MOD_ID, path));
+        return models().getExistingFile(new ResourceLocation(Luminax.MOD_ID, path));
     }
 
-    public void slabBlock(DeferredHolder<Block, ? extends SlabBlock> slab, DeferredHolder<Block, ? extends Block> block) {
+    public void slabBlock(RegistryObject<? extends SlabBlock> slab, RegistryObject<? extends Block> block) {
         this.getVariantBuilder(slab.get())
                 .partialState().with(SlabBlock.TYPE, SlabType.BOTTOM)
                 .addModels(new ConfiguredModel(getExistingFile(slab.getId().getPath())))
@@ -59,7 +59,7 @@ public class LuminaxBlockStateProvider extends BlockStateProvider {
                 .addModels(new ConfiguredModel(models().getExistingFile(block(block))));
     }
 
-    public void stairsBlock(DeferredHolder<Block, ? extends StairBlock> stair) {
+    public void stairsBlock(RegistryObject<? extends StairBlock> stair) {
         this.getVariantBuilder(stair.get()).forAllStatesExcept((state) -> {
             Direction facing = state.getValue(StairBlock.FACING);
             Half half = state.getValue(StairBlock.HALF);
@@ -85,7 +85,7 @@ public class LuminaxBlockStateProvider extends BlockStateProvider {
         }, StairBlock.WATERLOGGED);
     }
 
-    public void buttonBlock(DeferredHolder<Block, ? extends ButtonBlock> button) {
+    public void buttonBlock(RegistryObject<? extends ButtonBlock> button) {
         this.getVariantBuilder(button.get()).forAllStates((state) -> {
             Direction facing = state.getValue(ButtonBlock.FACING);
             AttachFace face = state.getValue(ButtonBlock.FACE);
@@ -99,7 +99,7 @@ public class LuminaxBlockStateProvider extends BlockStateProvider {
         });
     }
 
-    public void pressurePlateBlock(DeferredHolder<Block, ? extends PressurePlateBlock> pressurePlate) {
+    public void pressurePlateBlock(RegistryObject<? extends PressurePlateBlock> pressurePlate) {
         this.getVariantBuilder(pressurePlate.get())
                 .partialState().with(PressurePlateBlock.POWERED, true)
                 .addModels(new ConfiguredModel(getExistingFile(pressurePlate.getId().getPath() + "_down")))
@@ -107,7 +107,7 @@ public class LuminaxBlockStateProvider extends BlockStateProvider {
                 .addModels(new ConfiguredModel(getExistingFile(pressurePlate.getId().getPath())));
     }
 
-    public void wallBlock(DeferredHolder<Block, ? extends WallBlock> wall) {
+    public void wallBlock(RegistryObject<? extends WallBlock> wall) {
         MultiPartBlockStateBuilder builder = this.getMultipartBuilder(wall.get()).part().modelFile(getExistingFile(wall.getId().getPath() + "_post")).addModel().condition(WallBlock.UP, true).end();
         WALL_PROPS.entrySet().stream().filter((e) -> e.getKey().getAxis().isHorizontal()).forEach((e) -> {
             this.wallSidePart(builder, getExistingFile(wall.getId().getPath() + "_side"), e, WallSide.LOW);

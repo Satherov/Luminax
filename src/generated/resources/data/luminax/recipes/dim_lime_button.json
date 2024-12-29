@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "luminax:dim_lime_block"
+    }
+  ],
+  "result": {
+    "item": "luminax:dim_lime_button"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "b": {
+      "tag": "forge:dyes/yellow"
+    },
+    "g": {
+      "tag": "forge:dusts/glowstone"
+    }
+  },
+  "pattern": [
+    "aga",
+    "gbg",
+    "aga"
+  ],
+  "result": {
+    "count": 4,
+    "item": "luminax:yellow_block"
+  },
+  "show_notification": true
+}
