@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/maroon_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/maroon_block"
+    },
+    "type=top": {
+      "model": "luminax:block/maroon_slab_top"
+    }
+  }
+}

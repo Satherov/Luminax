@@ -1,6 +1,9 @@
 package com.satherov.luminax;
 
 import com.satherov.luminax.content.LuminaxRegistry;
+import net.neoforged.fml.config.ModConfig;
+import net.neoforged.neoforge.client.gui.ConfigurationScreen;
+import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -17,8 +20,15 @@ public class Luminax
 
     public Luminax(IEventBus modEventBus, ModContainer modContainer)
     {
-        LuminaxRegistry.CREATIVE_TABS.register(modEventBus);
         LuminaxRegistry.BLOCKS.register(modEventBus);
         LuminaxRegistry.ITEMS.register(modEventBus);
+
+        LuminaxRegistry.DYENAMIC_BLOCKS.register(modEventBus);
+        LuminaxRegistry.DYENAMIC_ITEMS.register(modEventBus);
+
+        LuminaxRegistry.CREATIVE_TABS.register(modEventBus);
+
+        modContainer.registerConfig(ModConfig.Type.CLIENT, LuminaxConfig.SPEC);
+        modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 }

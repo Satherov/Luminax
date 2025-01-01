@@ -13,6 +13,8 @@ public class EN_USProvider extends LuminaxLanguageProvider {
     @Override
     protected void addTranslations() {
         add("itemGroup.luminax", "Luminax");
+        add("luminax.configuration.show_dyenamics", "Show Dyenamics Blocks");
         LuminaxRegistry.BLOCKS.getEntries().forEach( block -> add(block.get(), format(block.getId().getPath())));
+        LuminaxRegistry.DYENAMIC_BLOCKS.getEntries().forEach( block -> add(block.get(), format(block.getId().getPath())));
     }
 }

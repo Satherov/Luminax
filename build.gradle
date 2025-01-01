@@ -86,6 +86,7 @@ configurations {
 
 dependencies {
     implementation "curse.maven:${jei}"
+    implementation "curse.maven:${dyenamics}"
 }
 
 tasks.withType(ProcessResources).configureEach {

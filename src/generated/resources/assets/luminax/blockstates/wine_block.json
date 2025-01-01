@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "luminax:block/wine_block"
+    }
+  }
+}

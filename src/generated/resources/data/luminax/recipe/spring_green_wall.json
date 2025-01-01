@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "luminax:spring_green_block"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "result": {
+    "count": 6,
+    "id": "luminax:spring_green_wall"
+  }
+}

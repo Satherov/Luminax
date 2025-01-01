@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/ultramarine_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/ultramarine_block"
+    },
+    "type=top": {
+      "model": "luminax:block/ultramarine_slab_top"
+    }
+  }
+}

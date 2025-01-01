@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "luminax:cherenkov_block"
+    }
+  },
+  "pattern": [
+    "aa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "luminax:cherenkov_pressure_plate"
+  }
+}

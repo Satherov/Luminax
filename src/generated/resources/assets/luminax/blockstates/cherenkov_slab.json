@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/cherenkov_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/cherenkov_block"
+    },
+    "type=top": {
+      "model": "luminax:block/cherenkov_slab_top"
+    }
+  }
+}

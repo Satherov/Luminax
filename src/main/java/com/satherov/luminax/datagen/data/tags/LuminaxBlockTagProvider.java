@@ -22,6 +22,7 @@ public class LuminaxBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
 
         LuminaxRegistry.BLOCKS.getEntries().forEach( block -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get()));
+        LuminaxRegistry.DYENAMIC_BLOCKS.getEntries().forEach( block -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get()));
 
         SetHelper.apply( set -> {
             tag(BlockTags.SLABS).add(set.SLAB.get()).add(set.DIM_SLAB.get());

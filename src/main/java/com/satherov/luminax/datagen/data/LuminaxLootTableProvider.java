@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class LuminaxLootTableProvider extends VanillaBlockLoot {
@@ -22,9 +23,17 @@ public class LuminaxLootTableProvider extends VanillaBlockLoot {
 
     @Override
     protected @NotNull Iterable<Block> getKnownBlocks() {
-        return LuminaxRegistry.BLOCKS.getEntries()
+        List<Block> list1 = LuminaxRegistry.BLOCKS.getEntries()
                 .stream()
                 .map(DeferredHolder::get)
                 .collect(Collectors.toList());
+
+        List<Block> list2 = LuminaxRegistry.DYENAMIC_BLOCKS.getEntries()
+                .stream()
+                .map(DeferredHolder::get)
+                .collect(Collectors.toList());
+
+        list1.addAll(list2);
+        return list1;
     }
 }

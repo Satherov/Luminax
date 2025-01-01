@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/conifer_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/conifer_block"
+    },
+    "type=top": {
+      "model": "luminax:block/conifer_slab_top"
+    }
+  }
+}

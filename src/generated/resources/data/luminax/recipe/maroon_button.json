@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "luminax:maroon_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "luminax:maroon_button"
+  }
+}

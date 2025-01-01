@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_slab",
+  "textures": {
+    "texture": "luminax:block/honey_block"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "luminax:dim_honey_block"
+    }
+  },
+  "pattern": [
+    "aa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "luminax:dim_honey_pressure_plate"
+  }
+}

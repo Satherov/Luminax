@@ -15,6 +15,24 @@
     "luminax:dim_blue_wall",
     "luminax:dim_purple_wall",
     "luminax:dim_magenta_wall",
-    "luminax:dim_pink_wall"
+    "luminax:dim_pink_wall",
+    "luminax:dim_honey_wall",
+    "luminax:dim_mint_wall",
+    "luminax:dim_lavender_wall",
+    "luminax:dim_navy_wall",
+    "luminax:dim_bubblegum_wall",
+    "luminax:dim_amber_wall",
+    "luminax:dim_conifer_wall",
+    "luminax:dim_icy_blue_wall",
+    "luminax:dim_ultramarine_wall",
+    "luminax:dim_maroon_wall",
+    "luminax:dim_wine_wall",
+    "luminax:dim_rose_wall",
+    "luminax:dim_fluorescent_wall",
+    "luminax:dim_spring_green_wall",
+    "luminax:dim_peach_wall",
+    "luminax:dim_cherenkov_wall",
+    "luminax:dim_aquamarine_wall",
+    "luminax:dim_persimmon_wall"
   ]
 }

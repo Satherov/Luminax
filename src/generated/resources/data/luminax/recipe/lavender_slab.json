@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "luminax:lavender_block"
+    }
+  },
+  "pattern": [
+    "aaa"
+  ],
+  "result": {
+    "count": 6,
+    "id": "luminax:lavender_slab"
+  }
+}

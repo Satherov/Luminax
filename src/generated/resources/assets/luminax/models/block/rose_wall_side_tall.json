@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_wall_side_tall",
+  "textures": {
+    "texture": "luminax:block/rose_block"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/honey_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/honey_block"
+    },
+    "type=top": {
+      "model": "luminax:block/honey_slab_top"
+    }
+  }
+}

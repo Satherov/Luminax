@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_button_pressed",
+  "textures": {
+    "texture": "luminax:block/cherenkov_block"
+  }
+}

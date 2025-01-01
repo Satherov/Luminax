@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "luminax:rose_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "luminax:rose_button"
+  }
+}

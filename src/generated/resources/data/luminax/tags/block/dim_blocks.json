@@ -15,6 +15,24 @@
     "luminax:dim_blue_block",
     "luminax:dim_purple_block",
     "luminax:dim_magenta_block",
-    "luminax:dim_pink_block"
+    "luminax:dim_pink_block",
+    "luminax:dim_honey_block",
+    "luminax:dim_mint_block",
+    "luminax:dim_lavender_block",
+    "luminax:dim_navy_block",
+    "luminax:dim_bubblegum_block",
+    "luminax:dim_amber_block",
+    "luminax:dim_conifer_block",
+    "luminax:dim_icy_blue_block",
+    "luminax:dim_ultramarine_block",
+    "luminax:dim_maroon_block",
+    "luminax:dim_wine_block",
+    "luminax:dim_rose_block",
+    "luminax:dim_fluorescent_block",
+    "luminax:dim_spring_green_block",
+    "luminax:dim_peach_block",
+    "luminax:dim_cherenkov_block",
+    "luminax:dim_aquamarine_block",
+    "luminax:dim_persimmon_block"
   ]
 }

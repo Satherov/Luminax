@@ -12,6 +12,7 @@ import java.util.function.Supplier;
 public class BlockSet {
 
     public final String name;
+    public final boolean dyenamic;
 
     private static final List<BlockSet> instances = new ArrayList<>();
     public static List<BlockSet> getSets() {
@@ -32,29 +33,35 @@ public class BlockSet {
     public final DeferredHolder<Block, PressurePlateBlock> DIM_PRESSURE_PLATE;
     public final DeferredHolder<Block, ButtonBlock> DIM_BUTTON;
 
-    public BlockSet(String name) {
+    public BlockSet(String name, boolean dyenamic) {
         this.name = name;
+        this.dyenamic = dyenamic;
         instances.add(this);
 
-        BLOCK = register(String.format("%s_block", name), () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).lightLevel((state) -> 15)));
-        STAIRS = register(String.format("%s_stairs", name), () -> new StairBlock(BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_STAIRS).lightLevel((state) -> 15)));
-        SLAB = register(String.format("%s_slab", name), () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB).lightLevel((state) -> 15)));
-        WALL = register(String.format("%s_wall", name), () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL).lightLevel((state) -> 15)));
-        PRESSURE_PLATE = register(String.format("%s_pressure_plate", name), () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).lightLevel((state) -> 15)));
-        BUTTON = register(String.format("%s_button", name), () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON).lightLevel((state) -> 15)));
+        BLOCK = register(String.format("%s_block", name), () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).lightLevel((state) -> 15)), dyenamic);
+        STAIRS = register(String.format("%s_stairs", name), () -> new StairBlock(BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_STAIRS).lightLevel((state) -> 15)), dyenamic);
+        SLAB = register(String.format("%s_slab", name), () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB).lightLevel((state) -> 15)), dyenamic);
+        WALL = register(String.format("%s_wall", name), () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL).lightLevel((state) -> 15)), dyenamic);
+        PRESSURE_PLATE = register(String.format("%s_pressure_plate", name), () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).lightLevel((state) -> 15)), dyenamic);
+        BUTTON = register(String.format("%s_button", name), () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON).lightLevel((state) -> 15)), dyenamic);
 
-        DIM_BLOCK = register(String.format("dim_%s_block", name), () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
-        DIM_STAIRS = register(String.format("dim_%s_stairs", name), () -> new StairBlock(BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_STAIRS)));
-        DIM_SLAB = register(String.format("dim_%s_slab", name), () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)));
-        DIM_WALL = register(String.format("dim_%s_wall", name), () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)));
-        DIM_PRESSURE_PLATE = register(String.format("dim_%s_pressure_plate", name), () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE)));
-        DIM_BUTTON = register(String.format("dim_%s_button", name), () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
-
+        DIM_BLOCK = register(String.format("dim_%s_block", name), () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)), dyenamic);
+        DIM_STAIRS = register(String.format("dim_%s_stairs", name), () -> new StairBlock(BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_STAIRS)), dyenamic);
+        DIM_SLAB = register(String.format("dim_%s_slab", name), () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)), dyenamic);
+        DIM_WALL = register(String.format("dim_%s_wall", name), () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)), dyenamic);
+        DIM_PRESSURE_PLATE = register(String.format("dim_%s_pressure_plate", name), () -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE)), dyenamic);
+        DIM_BUTTON = register(String.format("dim_%s_button", name), () -> new ButtonBlock(BlockSetType.STONE, 20, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)), dyenamic);
     }
 
-    private static <T extends Block> DeferredHolder<Block, T> register (String name, Supplier<T> properties) {
-        DeferredHolder<Block, T> block = LuminaxRegistry.BLOCKS.register(name, properties);
-        LuminaxRegistry.ITEMS.registerSimpleBlockItem(name, block);
+    private static <T extends Block> DeferredHolder<Block, T> register (String name, Supplier<T> properties, boolean dyenamic) {
+        DeferredHolder<Block, T> block;
+        if (dyenamic) {
+            block = LuminaxRegistry.DYENAMIC_BLOCKS.register(name, properties);
+            LuminaxRegistry.DYENAMIC_ITEMS.registerSimpleBlockItem(name, block);
+        } else {
+            block = LuminaxRegistry.BLOCKS.register(name, properties);
+            LuminaxRegistry.ITEMS.registerSimpleBlockItem(name, block);
+        }
         return block;
     }
 }

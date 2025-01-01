@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "luminax:spring_green_block"
+    }
+  },
+  "pattern": [
+    "aa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "luminax:spring_green_pressure_plate"
+  }
+}

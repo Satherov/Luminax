@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/dim_aquamarine_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/dim_aquamarine_block"
+    },
+    "type=top": {
+      "model": "luminax:block/dim_aquamarine_slab_top"
+    }
+  }
+}

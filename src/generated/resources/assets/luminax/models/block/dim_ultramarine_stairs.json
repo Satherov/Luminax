@@ -1,0 +1,6 @@
+{
+  "parent": "luminax:block/no_shade_stair",
+  "textures": {
+    "texture": "luminax:block/ultramarine_block"
+  }
+}

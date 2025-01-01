@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/dim_spring_green_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/dim_spring_green_block"
+    },
+    "type=top": {
+      "model": "luminax:block/dim_spring_green_slab_top"
+    }
+  }
+}

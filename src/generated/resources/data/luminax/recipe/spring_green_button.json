@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "luminax:spring_green_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "luminax:spring_green_button"
+  }
+}

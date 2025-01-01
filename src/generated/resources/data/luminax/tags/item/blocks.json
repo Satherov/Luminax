@@ -15,6 +15,24 @@
     "luminax:blue_block",
     "luminax:purple_block",
     "luminax:magenta_block",
-    "luminax:pink_block"
+    "luminax:pink_block",
+    "luminax:honey_block",
+    "luminax:mint_block",
+    "luminax:lavender_block",
+    "luminax:navy_block",
+    "luminax:bubblegum_block",
+    "luminax:amber_block",
+    "luminax:conifer_block",
+    "luminax:icy_blue_block",
+    "luminax:ultramarine_block",
+    "luminax:maroon_block",
+    "luminax:wine_block",
+    "luminax:rose_block",
+    "luminax:fluorescent_block",
+    "luminax:spring_green_block",
+    "luminax:peach_block",
+    "luminax:cherenkov_block",
+    "luminax:aquamarine_block",
+    "luminax:persimmon_block"
   ]
 }

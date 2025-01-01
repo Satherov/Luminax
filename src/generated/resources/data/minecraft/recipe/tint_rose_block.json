@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "dyenamics"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "luminax:blocks"
+    },
+    "b": {
+      "tag": "c:dyes/rose"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "result": {
+    "count": 8,
+    "id": "luminax:rose_block"
+  }
+}

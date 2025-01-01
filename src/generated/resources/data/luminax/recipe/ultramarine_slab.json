@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "luminax:ultramarine_block"
+    }
+  },
+  "pattern": [
+    "aaa"
+  ],
+  "result": {
+    "count": 6,
+    "id": "luminax:ultramarine_slab"
+  }
+}

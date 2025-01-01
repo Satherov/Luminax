@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "luminax:ultramarine_block"
+    }
+  },
+  "pattern": [
+    "aa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "luminax:ultramarine_pressure_plate"
+  }
+}

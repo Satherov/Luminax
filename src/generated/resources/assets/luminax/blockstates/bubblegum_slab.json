@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/bubblegum_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/bubblegum_block"
+    },
+    "type=top": {
+      "model": "luminax:block/bubblegum_slab_top"
+    }
+  }
+}

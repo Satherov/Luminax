@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/rose_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/rose_block"
+    },
+    "type=top": {
+      "model": "luminax:block/rose_slab_top"
+    }
+  }
+}

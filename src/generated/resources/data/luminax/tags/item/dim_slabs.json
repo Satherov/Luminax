@@ -15,6 +15,24 @@
     "luminax:dim_blue_slab",
     "luminax:dim_purple_slab",
     "luminax:dim_magenta_slab",
-    "luminax:dim_pink_slab"
+    "luminax:dim_pink_slab",
+    "luminax:dim_honey_slab",
+    "luminax:dim_mint_slab",
+    "luminax:dim_lavender_slab",
+    "luminax:dim_navy_slab",
+    "luminax:dim_bubblegum_slab",
+    "luminax:dim_amber_slab",
+    "luminax:dim_conifer_slab",
+    "luminax:dim_icy_blue_slab",
+    "luminax:dim_ultramarine_slab",
+    "luminax:dim_maroon_slab",
+    "luminax:dim_wine_slab",
+    "luminax:dim_rose_slab",
+    "luminax:dim_fluorescent_slab",
+    "luminax:dim_spring_green_slab",
+    "luminax:dim_peach_slab",
+    "luminax:dim_cherenkov_slab",
+    "luminax:dim_aquamarine_slab",
+    "luminax:dim_persimmon_slab"
   ]
 }

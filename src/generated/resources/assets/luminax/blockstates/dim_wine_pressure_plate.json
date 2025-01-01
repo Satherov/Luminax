@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "luminax:block/dim_wine_pressure_plate"
+    },
+    "powered=true": {
+      "model": "luminax:block/dim_wine_pressure_plate_down"
+    }
+  }
+}

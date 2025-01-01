@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "luminax:fluorescent_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "luminax:fluorescent_button"
+  }
+}

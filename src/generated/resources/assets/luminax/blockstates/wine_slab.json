@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "luminax:block/wine_slab"
+    },
+    "type=double": {
+      "model": "luminax:block/wine_block"
+    },
+    "type=top": {
+      "model": "luminax:block/wine_slab_top"
+    }
+  }
+}
