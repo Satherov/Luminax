@@ -11,8 +11,8 @@ public class LuminaxConfig {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
     private static final ModConfigSpec.BooleanValue SHOW_DYENAMICS = BUILDER
-            .comment("Should dyenamics blocks should appear in the creative menu / JEI?")
-            .comment("Note: This config will NOT have an effect if dynamics is loaded")
+            .comment("Should dyenamics blocks should appear in the creative menu even if dyenamics is not loaded?")
+            .comment("Needs a reload to take effect")
             .define("show_dyenamics", false);
 
     static final ModConfigSpec SPEC = BUILDER.build();
