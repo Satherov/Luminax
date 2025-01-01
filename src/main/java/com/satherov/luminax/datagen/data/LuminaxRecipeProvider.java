@@ -59,7 +59,7 @@ public class LuminaxRecipeProvider extends RecipeProvider implements IConditionB
         colors.put(LuminaxRegistry.PEACH.BLOCK.get().asItem(), DyenamicDyeColor.PEACH.getTag());
         colors.put(LuminaxRegistry.CHERENKOV.BLOCK.get().asItem(), DyenamicDyeColor.CHERENKOV.getTag());
         colors.put(LuminaxRegistry.AQUAMARINE.BLOCK.get().asItem(), DyenamicDyeColor.AQUAMARINE.getTag());
-        colors.put(LuminaxRegistry.PERSIMMON.BLOCK.get().asItem(), DyenamicDyeColor.AQUAMARINE.getTag());
+        colors.put(LuminaxRegistry.PERSIMMON.BLOCK.get().asItem(), DyenamicDyeColor.PERSIMMON.getTag());
     }
 
     private ShapedRecipeBuilder tint(TagKey<Item> item, TagKey<Item> color, Item output) {
