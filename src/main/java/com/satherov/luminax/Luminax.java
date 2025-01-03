@@ -2,6 +2,7 @@ package com.satherov.luminax;
 
 import com.satherov.luminax.content.LuminaxRegistry;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import org.slf4j.Logger;
@@ -29,6 +30,6 @@ public class Luminax
         LuminaxRegistry.CREATIVE_TABS.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.CLIENT, LuminaxConfig.SPEC);
-        modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
+        if(FMLEnvironment.dist.isClient()) modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 }
